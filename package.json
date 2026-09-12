@@ -1,0 +1,34 @@
+{
+  "name": "js-assessment",
+  "description": "A test-driven assessment of JavaScript skills",
+  "type": "module",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": "vitest run src/__tests__/1.numbers.js src/__tests__/2.strings.js src/__tests__/3.typesAndCoercion.js src/__tests__/4.equality.js src/__tests__/5.controlFlowAndLogic.js src/__tests__/6.arrays.js src/__tests__/7.objects.js src/__tests__/8.functionsAndScope.js src/__tests__/9.arraysHigherOrder.js",
+    "test:all": "vitest run",
+    "test:bonus": "vitest run src/__tests__/10.objectsAdvanced.js src/__tests__/11.stringsAdvanced.js src/__tests__/12.jsonAndDate.js",
+    "test:watch": "vitest",
+    "test:1": "vitest run src/__tests__/1.numbers.js",
+    "test:2": "vitest run src/__tests__/2.strings.js",
+    "test:3": "vitest run src/__tests__/3.typesAndCoercion.js",
+    "test:4": "vitest run src/__tests__/4.equality.js",
+    "test:5": "vitest run src/__tests__/5.controlFlowAndLogic.js",
+    "test:6": "vitest run src/__tests__/6.arrays.js",
+    "test:7": "vitest run src/__tests__/7.objects.js",
+    "test:8": "vitest run src/__tests__/8.functionsAndScope.js",
+    "test:9": "vitest run src/__tests__/9.arraysHigherOrder.js",
+    "test:10": "vitest run src/__tests__/10.objectsAdvanced.js",
+    "test:11": "vitest run src/__tests__/11.stringsAdvanced.js",
+    "test:12": "vitest run src/__tests__/12.jsonAndDate.js",
+    "web:serve": "npx http-server web -p 5173 -c-1"
+  },
+  "dependencies": {
+    "esbuild": "^0.27.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0",
+    "vitest": "^4.0.17"
+  }
+}
