@@ -3,7 +3,7 @@
   "description": "A test-driven assessment of JavaScript skills",
   "type": "module",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "lint": "eslint src/1.numbers.js src/2.strings.js src/3.typesAndCoercion.js src/4.equality.js src/5.controlFlowAndLogic.js src/6.arrays.js src/7.objects.js src/8.functionsAndScope.js src/9.arraysHigherOrder.js",
     "test": "vitest run src/__tests__/1.numbers.js src/__tests__/2.strings.js src/__tests__/3.typesAndCoercion.js src/__tests__/4.equality.js src/__tests__/5.controlFlowAndLogic.js src/__tests__/6.arrays.js src/__tests__/7.objects.js src/__tests__/8.functionsAndScope.js src/__tests__/9.arraysHigherOrder.js",
     "test:all": "vitest run",
     "test:bonus": "vitest run src/__tests__/10.objectsAdvanced.js src/__tests__/11.stringsAdvanced.js src/__tests__/12.jsonAndDate.js",

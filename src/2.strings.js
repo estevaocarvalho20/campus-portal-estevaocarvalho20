@@ -48,7 +48,7 @@ function capitalize(str) {
  * Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
  */
 function splitString(str, splitAt = `,`) {
-  const result = str.split(splitAt, 2);
+  const result = str.split(splitAt);
   return result;
 }
 
